@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../css/day1.css";
+import styles from "../css/day1.module.css";
 
 export default function Day1ExpandingCards() {
   const [activePanel, setActivePanel] = useState(0);
@@ -40,11 +40,13 @@ export default function Day1ExpandingCards() {
     <div>
       <a href="/">Back to Home</a>
       <h1>Day 1: Expanding Cards</h1>
-      <div className="container">
+      <div className={styles.container}>
         {panels.map((panel, index) => (
           <div
             key={index}
-            className={`panel ${index === activePanel ? "active" : ""}`}
+            className={`${styles.panel} ${
+              index === activePanel ? styles.active : ""
+            }`}
             style={{
               backgroundImage: `url(${panel.image})`,
             }}

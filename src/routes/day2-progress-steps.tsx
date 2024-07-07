@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../css/day2.css";
+import styles from "../css/day2.module.css";
 
 export default function Day2ProgressSteps() {
   const [currentActive, setCurrentActive] = useState(1);
@@ -26,17 +26,19 @@ export default function Day2ProgressSteps() {
     <div>
       <a href="/">Back to Home</a>
       <h1>Day 2: Progress Steps</h1>
-      <div className="container">
-        <div className="progress-container">
+      <div className={styles.container}>
+        <div className={styles.progress_container}>
           <div
-            className="progress"
+            className={styles.progress}
             id="progress"
             style={{ width: `${progressWidth}%` }}
           ></div>
           {[1, 2, 3, 4].map((step) => (
             <div
               key={step}
-              className={`circle${step <= currentActive ? " active" : ""}`}
+              className={`${styles.circle} ${
+                step <= currentActive ? styles.active : ""
+              }`}
             >
               {step}
             </div>
@@ -44,7 +46,7 @@ export default function Day2ProgressSteps() {
         </div>
         <div>
           <button
-            className="btn"
+            className={styles.btn}
             id="prev"
             onClick={prev}
             type="button"
@@ -53,7 +55,7 @@ export default function Day2ProgressSteps() {
             Prev
           </button>
           <button
-            className="btn"
+            className={styles.btn}
             id="next"
             onClick={next}
             type="button"
