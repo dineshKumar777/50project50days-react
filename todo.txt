@@ -1,0 +1,2 @@
+- move common css to either index.css or app.css
+- similarly font loading
