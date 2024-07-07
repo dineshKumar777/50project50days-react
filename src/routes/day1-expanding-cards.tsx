@@ -38,6 +38,7 @@ export default function Day1ExpandingCards() {
 
   return (
     <div>
+      <a href="/">Back to Home</a>
       <h1>Day 1: Expanding Cards</h1>
       <div className="container">
         {panels.map((panel, index) => (

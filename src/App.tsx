@@ -11,6 +11,9 @@ function App() {
       <br />
       <a href="">React based - Link needs to be added</a>
       <br />
+      <br />
+      <br />
+      <h5>Challenges</h5>
       <Link to="/day1-expanding-card">day1-expanding-card</Link>
     </>
   );
