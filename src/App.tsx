@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
       </a>
       <br />
       <a href="">React based - Link needs to be added</a>
+      <br />
+      <Link to="/day1-expanding-card">day1-expanding-card</Link>
     </>
   );
 }
