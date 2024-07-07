@@ -14,7 +14,10 @@ function App() {
       <br />
       <br />
       <h5>Challenges</h5>
-      <Link to="/day1-expanding-card">day1-expanding-card</Link>
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        <Link to="/day1-expanding-card">day1-expanding-card</Link>
+        <Link to="/day2-progress-steps">day2-progress-steps</Link>
+      </div>
     </>
   );
 }
