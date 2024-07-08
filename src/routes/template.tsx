@@ -1,4 +1,4 @@
-import "../css/day2.css";
+import "../css/day2.module.css";
 
 export default function Day2ProgressSteps() {
   return (

@@ -17,6 +17,9 @@ function App() {
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
         <Link to="/day1-expanding-card">day1-expanding-card</Link>
         <Link to="/day2-progress-steps">day2-progress-steps</Link>
+        <Link to="/day3-rotating-nav-animation">
+          day3-rotating-nav-animation
+        </Link>
       </div>
     </>
   );
