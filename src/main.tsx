@@ -6,6 +6,7 @@ import Day2ProgressSteps from "./routes/day2-progress-steps.tsx";
 import Day3RotatingNavAnimation from "./routes/day3-rotating-nav-animation.tsx";
 // import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Day4HiddenSearch from "./routes/day4-hidden-search.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/day3-rotating-nav-animation",
     element: <Day3RotatingNavAnimation />,
+  },
+  {
+    path: "/day4-hidden-search",
+    element: <Day4HiddenSearch />,
   },
 ]);
 

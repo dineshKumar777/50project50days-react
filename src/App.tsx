@@ -9,7 +9,7 @@ function App() {
         HTML only - original project link
       </a>
       <br />
-      <a href="">React based - Link needs to be added</a>
+      <a href="">React based - (not yet hosted)</a>
       <br />
       <br />
       <br />
@@ -18,8 +18,9 @@ function App() {
         <Link to="/day1-expanding-card">day1-expanding-card</Link>
         <Link to="/day2-progress-steps">day2-progress-steps</Link>
         <Link to="/day3-rotating-nav-animation">
-          day3-rotating-nav-animation
+          day3-rotating-nav-animation(not completed)
         </Link>
+        <Link to="/day4-hidden-search">day4-hidden-search</Link>
       </div>
     </>
   );
