@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../css/day4.module.css";
 import { Search } from "lucide-react";
 
 export default function Day4HiddenSearch() {
   const [search, setSearch] = useState(false);
+
+  useEffect(() => {
+    document.body.className = "";
+    document.body.classList.add(styles.day4);
+  }, []);
 
   const handleclick = () => {
     setSearch(!search);
